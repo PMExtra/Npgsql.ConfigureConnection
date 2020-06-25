@@ -12,7 +12,15 @@
     <PackageProjectUrl>https://github.com/PMExtra/Npgsql.ConfigureConnection</PackageProjectUrl>
     <RepositoryUrl>https://github.com/PMExtra/Npgsql.ConfigureConnection</RepositoryUrl>
     <PackageTags>Npgsql ConnectionString Configuration</PackageTags>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="1.1.2" />
